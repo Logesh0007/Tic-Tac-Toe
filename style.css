@@ -1,0 +1,276 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4a80f0;
+    overflow: hidden;
+}
+
+/* Container */
+.container{
+    width: 90%;
+    height: 90vh;
+    transform: translate(75px, 30px);
+    box-shadow: 10px 10px 30px rgba(53, 46, 46, 0.3), 
+                -5px -5px 10px rgba(255, 255, 255, 0.1), 
+          inset 10px 10px 30px rgba(53, 46, 46, 0.3), 
+          inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px
+}
+
+/* Game Title */
+.container h1{
+    width: 235px;
+    height: 45px;
+    color: #e3ecff;
+    line-height: 40px;
+    font-size: 70px;
+    transform: translate(247px, 95px); 
+    font-family: Dongle, sans-serif;   
+}
+
+/* Game Title hover effects */
+.container h1:hover{
+    transform: translate(245px, 85px);
+    transition: 0.2s ease-out;
+    border-bottom: 2px solid #e3ecff;
+}
+
+/* Start new game (reload the page) */
+.container .page_res{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.container .page_res:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+/* Game Board */
+.play_area{
+    width: 348px;
+    height: 350px;
+    transform: translate(181px, 130px);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Game board hover effects */
+.play_area:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.747);
+    transition: all 0.2s ease-out;
+}
+
+/* Boxes */
+.box{
+    width: 115px;
+    height: 115px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border: 0.5px solid rgba(0, 0, 0, 0.185);
+    padding-left: 36px;
+    padding-top: 10px;
+    font-size: 60px;
+    border-radius: 7px;
+    color: #062c7c;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Box hover effects */
+.box:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+    transition: all 0.2s ease-out;
+}
+
+/* Label of player turn */
+.container .turn{
+    width: 260px;
+    height: 50px;
+    transform: translate(235px, 160px);
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #e3ecff;
+}
+
+/* Score board */
+.container .details{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #062c7c;
+    transform: translate(640px, -240px);
+    border-radius: 10px;
+}
+
+/* Score board hover effects */
+.container .details:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 15px #062c7c;
+}
+
+/* Result showing box */
+.container .details .res_area{
+    transform: translate(218px, 65px);
+    width: 140px;
+    border-radius: 10px;
+    height: 130px;
+    font-size: 30px;
+    color: #e3ecff;
+    background-color: #e3ecff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Winner name */
+.container .details .win_symbol{
+    width: 100px;
+    height: 90px;
+    transform: translate(20px);
+    text-align: center;
+    color: #062c7c;
+    font-size: 70px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container .details .winner{
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    transform: translate(0, 5px);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #062c7c;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+/* Points Table */
+.view{
+    width: 160px;
+    height: 132px;
+    position: absolute;
+    left: 35px;
+    top: 70px;
+    display: none;
+}
+
+/* Score card title */
+.container .res_head{
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    width: 160px;
+    height: 33px;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e3ecff;
+    color: #e3ecff;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* Total match count */
+.container .tot_mat{
+    color: #e3ecff;
+    font-size: 25px;
+    position: absolute;
+    width: 180px;
+    font-weight: normal;
+    height: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Player X points */
+.container .player_x{
+    position: absolute;
+    top: 30px;
+    width: 180px;
+    height: 20px;
+    color: #e3ecff;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Player O points */
+.container .player_o{
+    color: #e3ecff;
+    font-size: 25px;
+    position: absolute;
+    top: 60px;
+    width: 180px;
+    height: 20px;
+    font-weight: normal;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Draw counts */
+.container .mat_draw{
+    color: #e3ecff;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    width: 180px;
+    height: 20px;
+    font-weight: normal;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Next Game button */
+.container .restart{
+    width: 154px;
+    height: 50px;
+    transform: translate(50px, 80px);
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #062c7c;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* View points button */
+.container .points{
+    width: 154px;
+    height: 50px;
+    transform: translate(30px, 80px);
+    color: #062c7c;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: inherit;
+    border: 2px solid #062c7c;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* View points button hover effects */
+.container .points:hover{
+    transition: all 0.2s ease-out;
+    color: white;
+    border: 2px solid #e3ecff;
+}
+
+/* Next Game button hover effects */
+.container .restart:hover{
+    box-shadow: 0 0 10px 1px #e3ecff;
+    transition: all 0.2s ease-out;
+    color: white;
+}
