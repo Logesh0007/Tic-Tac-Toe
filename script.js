@@ -127,7 +127,7 @@ function point()
 {
     view_check()
 
-    document.getElementById("t_m").innerHTML = `Matche(s) : ${matches}`
+    document.getElementById("t_m").innerHTML = `Match(es) : ${matches}`
     document.getElementById("p_x").innerHTML = `Player X  : ${x_points}`
     document.getElementById("p_o").innerHTML = `Player O  : ${o_points}`
     document.getElementById("m_d").innerHTML = `Draw      : ${draw}`
