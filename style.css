@@ -274,3 +274,356 @@ body{
     transition: all 0.2s ease-out;
     color: white;
 }
+
+
+/* Responsive for large tabulate */
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 80%;
+        transform: translate(120px, 75px);
+    }
+    .play_area{
+        width: 210px;
+        height: 210px;   
+    }
+    .container h1{
+        width: 167px;
+        height: 35px;
+        color: #e3ecff;
+        line-height: 40px;
+        font-size: 50px;
+        transform: translate(208px, 110px); 
+        font-family: Dongle, sans-serif;   
+    }
+    .container h1:hover{
+        transform: translate(208px, 90px);
+        transition: 0.2s ease-out;
+        border-bottom: 2px solid #e3ecff;
+    }
+    .box{
+        padding: 0;
+        margin: 0;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .turn{
+        width: 170px;
+        height: 30px;
+        transform: translate(210px, 150px);
+        font-size: 17px;
+        font-weight: normal;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #e3ecff;
+    }
+    .container .details{
+        width: 350px;
+        height: 240px;
+        border: 1px solid #062c7c;
+        transform: translate(500px, -125px);
+        border-radius: 10px;
+    }
+    .container .details .res_area{
+        transform: translate(200px, 65px);
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        color: #e3ecff;
+        background-color: #e3ecff;
+        box-shadow: 0 0 20px #062c7c;
+    }
+    .container .details .win_symbol{
+        width: 80px;
+        height: 60px;
+        transform: translate(10px, 5px);
+        text-align: center;
+        color: #062c7c;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .view{
+        width: 130px;
+        height: 92px;
+        position: absolute;
+        left: 50px;
+        top: 70px;
+        display: none;
+    }
+    .container .tot_mat{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        width: 180px;
+        font-weight: normal;
+        height: 20px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .player_x{
+        position: absolute;
+        top: 25px;
+        width: 180px;
+        height: 20px;
+        color: #e3ecff;
+        font-size: 17px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .player_o{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        top: 50px;
+        width: 180px;
+        height: 20px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .mat_draw{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        top: 73px;
+        width: 180px;
+        height: 20px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .details .winner{
+        width: 95px;
+        height: 35px;
+        text-align: center;
+        transform: translate(2px, 2px);
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #062c7c;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .container .res_head{
+        position: absolute;
+        top: 10px;
+        left: 95px;
+        width: 138px;
+        height: 28px;
+        font-size: 17px;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3ecff;
+        color: #e3ecff;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    .container .restart{
+        width: 125px;
+        height: 40px;
+        transform: translate(55px, 80px);
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        background-color: #062c7c;
+        font-family: 'Exo 2', sans-serif;
+    }
+    .container .points{
+        width: 125px;
+        height: 40px;
+        transform: translate(30px, 80px);
+        color: #062c7c;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        background-color: inherit;
+        border: 2px solid #062c7c;
+        font-family: 'Exo 2', sans-serif;
+    }
+}
+
+
+/* Responsive for mobile */
+@media only screen and (max-width: 576px) {
+    .container{
+        width: 80%;
+        transform: translate(65px, 75px);
+    }
+    .play_area{
+        width: 210px;
+        height: 210px;  
+        transform: translate(127px, 50px); 
+    }
+    .container .page_res{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .container h1{
+        width: 153px;
+        height: 33px;
+        color: #e3ecff;
+        line-height: 40px;
+        font-size: 45px;
+        transform: translate(160px, 30px); 
+        font-family: Dongle, sans-serif;   
+    }
+    .container h1:hover{
+        transform: translate(160px, 25px);
+        transition: 0.2s ease-out;
+        border-bottom: 2px solid #e3ecff;
+    }
+    .box{
+        padding: 0;
+        margin: 0;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .turn{
+        width: 170px;
+        height: 30px;
+        transform: translate(170px, 70px);
+        font-size: 17px;
+        font-weight: normal;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #e3ecff;
+    }
+    .container .details{
+        width: 350px;
+        height: 220px;
+        border: 1px solid #062b7c6e;
+        transform: translate(58px, 85px);
+        border-radius: 10px;
+    }
+    .container .res_head{
+        position: absolute;
+        top: 5px;
+        left: 110px;
+        width: 120px;
+        height: 28px;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3ecff;
+        color: #e3ecff;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    .view{
+        width: 130px;
+        height: 92px;
+        position: absolute;
+        left: 40px;
+        top: 60px;
+        display: none;
+    }
+    .container .tot_mat{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        width: 180px;
+        font-weight: normal;
+        height: 20px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .player_x{
+        position: absolute;
+        top: 25px;
+        width: 180px;
+        height: 20px;
+        color: #e3ecff;
+        font-size: 17px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .player_o{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        top: 50px;
+        width: 180px;
+        height: 20px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .mat_draw{
+        color: #e3ecff;
+        font-size: 17px;
+        position: absolute;
+        top: 73px;
+        width: 180px;
+        height: 20px;
+        font-weight: normal;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .container .details .res_area{
+        transform: translate(200px, 55px);
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        color: #e3ecff;
+        background-color: #e3ecff;
+        box-shadow: 0 0 20px #062c7c;
+    }
+    .container .details .win_symbol{
+        width: 80px;
+        height: 60px;
+        transform: translate(10px);
+        text-align: center;
+        color: #062c7c;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .container .details .winner{
+        width: 95px;
+        height: 35px;
+        text-align: center;
+        transform: translate(3px, -2px);
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #062c7c;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .container .restart{
+        width: 125px;
+        height: 40px;
+        transform: translate(60px, 68px);
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        background-color: #062c7c;
+        font-family: 'Exo 2', sans-serif;
+    }
+    .container .points{
+        width: 125px;
+        height: 40px;
+        transform: translate(30px, 68px);
+        color: #062c7c;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        background-color: inherit;
+        border: 2px solid #062c7c;
+        font-family: 'Exo 2', sans-serif;
+    }
+}
