@@ -448,10 +448,10 @@ body{
 
 
 /* Responsive for mobile */
-@media only screen and (max-width: 466px) {
+@media only screen and (max-width: 426px) {
     .container{
-        width: 356px;
-        height: 712px;
+        width: 406px;
+        height: 710px;
         transform: translate(10px, 10px);
         box-shadow: none;
     }
@@ -464,23 +464,22 @@ body{
         cursor: pointer;
     }
     .container h1{
-        width: 152px;
-        height: 30px;
+        width: 165px;
+        height: 35px;
         color: #e3ecff;
-        line-height: 40px;
-        font-size: 45px;
-        transform: translate(100px, 5px); 
+        font-size: 50px;
+        transform: translate(120px, 18px); 
         font-family: Dongle, sans-serif;   
     }
     .container h1:hover{
-        transform: translate(100px, 0px);
+        transform: translate(115px, 7px);
         transition: 0.2s ease-out;
         border-bottom: 1px solid #e3ecff;
     }
     .play_area{
         width: 280px;
         height: 280px;  
-        transform: translate(40px, 50px); 
+        transform: translate(65px, 50px); 
     }
     .play_area:hover{
         box-shadow: none;
@@ -498,15 +497,15 @@ body{
     .container .turn{
         width: 193px;
         height: 30px;
-        transform: translate(80px, 55px);
+        transform: translate(110px, 55px);
         font-size: 20px;
         font-weight: normal;
         font-family: 'Mochiy Pop P One', sans-serif;
         color: #e3ecff;
     }
     .container .details{
-        width: 355px;
-        height: 260px;
+        width: 405px;
+        height: 255px;
         border: 1px solid #062b7c6e;
         transform: translate(0px, 100px);
         border-radius: 10px;
@@ -516,11 +515,11 @@ body{
     }
     .container .res_head{
         position: absolute;
-        top: 5px;
-        left: 115px;
-        width: 120px;
+        top: 10px;
+        left: 138px;
+        width: 128px;
         height: 25px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: normal;
         text-transform: uppercase;
         border-bottom: 1px solid #e3ecff;
@@ -531,7 +530,7 @@ body{
         width: 140px;
         height: 120px;
         position: absolute;
-        left: 30px;
+        left: 50px;
         top: 60px;
         display: none;
     }
@@ -576,7 +575,7 @@ body{
         font-family: 'Balsamiq Sans', cursive;
     }
     .container .details .res_area{
-        transform: translate(180px, 65px);
+        transform: translate(220px, 65px);
         width: 150px;
         height: 120px;
         border-radius: 10px;
@@ -606,28 +605,10 @@ body{
         font-weight: normal;
         font-size: 17px;
     }
-    .container .restart{
-        width: 170px;
-        height: 40px;
-        transform: translate(15px, 75px);
-        border: none;
-        color: white;
-        text-decoration: none;
-        text-transform: lowercase;
-        font-size: 20px;
-        padding-bottom: 5px;
-        border-radius: 9px;
-        font-weight: 600;
-        background-color: #062c7c;
-        font-family: 'Exo 2', sans-serif;
-    }
-    .container .restart:hover{
-        box-shadow: 0 0 5px #e3ecff;
-    }
     .container .points{
         width: 150px;
         height: 40px;
-        transform: translate(10px, 75px);
+        transform: translate(30px, 75px);
         color: #062c7c;
         text-decoration: none;
         text-transform: lowercase;
@@ -641,5 +622,23 @@ body{
     }
     .container .points:hover{
         border: 1px solid #e3ecff;
+    }
+    .container .restart{
+        width: 170px;
+        height: 40px;
+        transform: translate(53px, 75px);
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 20px;
+        padding-bottom: 5px;
+        border-radius: 9px;
+        font-weight: 600;
+        background-color: #062c7c;
+        font-family: 'Exo 2', sans-serif;
+    }
+    .container .restart:hover{
+        box-shadow: 0 0 5px #e3ecff;
     }
 }
