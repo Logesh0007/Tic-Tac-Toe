@@ -448,7 +448,7 @@ body{
 
 
 /* Responsive for mobile */
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 466px) {
     .container{
         width: 356px;
         height: 712px;
