@@ -472,7 +472,7 @@ body{
         font-family: Dongle, sans-serif;   
     }
     .container h1:hover{
-        transform: translate(115px, 7px);
+        transform: translate(120px, 7px);
         transition: 0.2s ease-out;
         border-bottom: 1px solid #e3ecff;
     }
